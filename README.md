@@ -13,3 +13,7 @@
 | 開発環境の起動             | `npm start`                                 |
 | テスト                     | `npm t`                                     |
 | コミットテンプレートの登録 | `git config commit.template .commitmessage` |
+
+### デザイン
+
+<https://www.figma.com/file/SrJTfrFgy0jS5JRbRx9rPnzL/Bleedmaster>
