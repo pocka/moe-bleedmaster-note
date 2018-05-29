@@ -4,11 +4,11 @@ import { storiesOf } from '@storybook/react'
 
 import { withInfo } from '@storybook/addon-info'
 
-import Labels from './'
+import Logo from './'
 
-storiesOf('molecules/Labels', module).add(
+storiesOf('atoms/Logo', module).add(
   'basic usage',
   withInfo(`
-    てすとだよ〜
-  `)(() => <Labels label="foo" />)
+    ロゴ
+  `)(() => <Logo />)
 )
