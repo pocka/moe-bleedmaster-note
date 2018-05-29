@@ -22,6 +22,9 @@
 | 開発環境の起動             | `npm start`                                 |
 | テスト                     | `npm t`                                     |
 | コミットテンプレートの登録 | `git config commit.template .commitmessage` |
+| Storybookの起動            | `npm run storybook`                         |
+| Lintの実行                 | `npm run lint`                              |
+| コードの一括フォーマット   | `npm run format`                            |
 
 ### デザイン
 
