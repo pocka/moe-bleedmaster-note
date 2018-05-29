@@ -6,6 +6,11 @@
 
 <br/>
 
+[![Build Status](https://travis-ci.com/pocka/moe-bleedmaster-note.svg?branch=master)](https://travis-ci.com/pocka/moe-bleedmaster-note)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
+<br/>
+
 </div>
 
 ### コマンド一覧
