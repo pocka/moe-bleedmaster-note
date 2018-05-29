@@ -2,7 +2,7 @@
 
 <br/>
 
-![logo](./src/assets/images/logo.svg)
+![logo](./public/logo.svg)
 
 <br/>
 
