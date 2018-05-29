@@ -5,6 +5,9 @@ script:
 - npm run lint
 - npm test
 
+before_deploy:
+- npm run build
+
 deploy:
   provider: pages
   skip-cleanup: true
