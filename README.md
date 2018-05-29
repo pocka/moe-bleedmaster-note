@@ -1,6 +1,10 @@
 <div align="center">
 
+<br/>
+
 ![logo](./src/assets/images/logo.svg)
+
+<br/>
 
 </div>
 
