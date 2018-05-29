@@ -44,21 +44,21 @@ const Menu: React.SFC<Props> = ({
       <Row padding="large">
         <Logo />
       </Row>
-      <Row padding="small">
-        <MenuItem
-          color={activeItem === 'exp' ? 'black' : 'grey'}
-          onClick={activeExp}
-        >
-          けいけんち
-        </MenuItem>
-      </Row>
-      <Row padding="small">
-        <MenuItem
-          color={activeItem === 'kakuue' ? 'black' : 'grey'}
-          onClick={activeKakuue}
-        >
-          かくうえ
-        </MenuItem>
+      <Row>
+        <div>
+          <MenuItem
+            color={activeItem === 'exp' ? 'black' : 'grey'}
+            onClick={activeExp}
+          >
+            けいけんち
+          </MenuItem>
+          <MenuItem
+            color={activeItem === 'kakuue' ? 'black' : 'grey'}
+            onClick={activeKakuue}
+          >
+            かくうえ
+          </MenuItem>
+        </div>
       </Row>
       <Row padding="large">
         <HelpButton onClick={showHelp} />
@@ -71,7 +71,7 @@ export default Menu
 
 const Container = styled(Stack)`
   /* layouts */
-  max-height: 90vh;
+  max-height: 450px;
   min-height: 60vh;
   justify-content: space-between;
 `
@@ -82,6 +82,16 @@ const Row = styled(StackItem)`
 `
 
 const MenuItem = styled(Text)`
+  /* layouts */
+  display: block;
+  margin-top: 1em;
+
   /* appearance */
   cursor: pointer;
+  text-align: center;
+
+  /* pseudo */
+  &:first-child {
+    margin-top: 0;
+  }
 `
