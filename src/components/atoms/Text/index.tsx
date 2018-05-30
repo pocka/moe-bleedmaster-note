@@ -1,26 +1,24 @@
 import * as React from 'react'
 
-import styled from 'styled-components'
+import styled, { ThemedStyledProps } from '~/themes'
 
-const sizeToPixel = (s: Required<Props>['size']): number => {
-  switch (s) {
-    case 'small':
-      return 18
-    case 'medium':
-      return 24
-    case 'large':
-      return 36
-    case 'extra large':
-      return 48
-  }
-}
+/**
+ * propsのサイズ表記をテーマのサイズ表記にマッピングする
+ * @param size
+ */
+const mapSize = (size: Required<Props>['size']) =>
+  size === 'extra large' ? 'extraLarge' : size
 
 const Span = styled.span`
   /* layouts */
-  font-size: ${(p: Props) => sizeToPixel(p.size!)}px;
+  font-size: ${(p: ThemedStyledProps<Props>) =>
+    p.theme!.sizes[mapSize(p.size!)]}px;
 
   /* appearance */
-  color: ${(p: Props) => (p.color === 'black' ? '#111' : '#888')};
+  color: ${(p: ThemedStyledProps<Props>) =>
+    p.color === 'black'
+      ? p.theme!.colors.foreground
+      : p.theme!.colors.foregroundLight};
 
   /* misc */
   font-family: 'Rounded Mplus 1c';
