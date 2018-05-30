@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import styled from 'styled-components'
+import styled from '~/themes'
 
 import Text from '~/components/atoms/Text'
 
@@ -47,7 +47,7 @@ const Container = styled.div`
 
 const SubContainer = styled.div`
   /* layouts */
-  padding: 24px;
+  padding: ${p => p.theme.sizes.medium}px;
 `
 
 const MenuContainer = SubContainer.extend`
@@ -76,7 +76,7 @@ const Title = styled.h1`
   /* layouts */
   margin: 0;
   padding: 0;
-  padding-bottom: 48px;
+  padding-bottom: ${p => p.theme.sizes.extraLarge}px;
 
   /* appearance */
   text-align: center;
