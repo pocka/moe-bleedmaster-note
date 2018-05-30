@@ -15,6 +15,7 @@ export interface Theme {
     main: string
     accent: string
   }
+  fontFamily: string
 }
 
 const {

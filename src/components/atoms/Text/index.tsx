@@ -21,7 +21,7 @@ const Span = styled.span`
       : p.theme!.colors.foregroundLight};
 
   /* misc */
-  font-family: 'Rounded Mplus 1c';
+  font-family: '${p => p.theme.fontFamily}';
 `
 
 export interface Props {

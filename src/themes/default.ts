@@ -13,7 +13,8 @@ const theme: Theme = {
     foregroundLight: '#888',
     main: '#F8D14E',
     accent: '#2D9FDB'
-  }
+  },
+  fontFamily: 'Rounded Mplus 1c'
 }
 
 export default theme
